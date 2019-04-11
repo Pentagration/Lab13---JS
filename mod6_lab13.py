@@ -21,36 +21,51 @@ def madLib():
             "verb":"such a shame", 
             "dayOfWeek":"Monday", 
             "age":"27",
-            "first":"Andrew",
-            "last":"Maslia",
+            "firstName":"Andrew",
+            "lastName":"Maslia",
             "activity":"video games",
             "pluralNoun1":"video games",
             "emotion":"sad",
             "noun1":"PS4",
             "noun2":"iPad",
-            "last":"Maslia",
             "noun3":"video games",
-            "first":"Andrew",
             "noun4":"game controller",
             "pluralNoun2":"remote controls",
             "noun5":"laptop",
             "location":"movie theater",
-            "last":"Maslia",
             "subject":"his Kindle"}
   
   value = replace.values()
   key = replace.keys()
   
+  #finds the matches to the dictionary values
+  #in the string and replaces those sub-strings
+  #with the value of the dictionary key
+  #later we'll overwrite the keys with the user Input
   for x in range(0,len(value)):
     newString = string.replace(value[x],key[x])
     string = newString
-        
+  
+  #values have been replaced with the keys
+  print string
+  
+  #request user input, and change the values
+  #in the dictionary to the user input            
   for y in range(0,len(key)):
     userInput = requestString(key[y])
     replace[key[y]] = userInput
-  
+
+  #print the dictionary updated with the 
+  #user input it works
   print replace
+  print replace.items()
   
+  #A TEST BECAUSE THIS ISN'T WORKING
+  #When I print the keys and values
+  #they are stuck at the original key and values
   for z in range(0,len(value)):
     print key[z], value[z]
-    
+    #newString2 = string.replace(key[z],value[z])
+    #string2 = newString2
+  
+  #print string2
