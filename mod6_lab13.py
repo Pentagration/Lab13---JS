@@ -2,10 +2,6 @@
 #CST205-40_SP19
 #Lab 13 - Madlib
 
-def replaceWith(string,list,replace):
-  return string.replace(list,replace)
-
-
 def madLib():
   string = ('CRANSTON, RI Describing the utter lack of ambition as \"such a shame,\" '
   'sources confirmed Monday that local 27-year-old Andrew Maslia has been wasting his '
@@ -41,10 +37,20 @@ def madLib():
             "location":"movie theater",
             "last":"Maslia",
             "subject":"his Kindle"}
-            
-  list = replace.values()
-
-  for replace in list:
-    print replace
-    
   
+  value = replace.values()
+  key = replace.keys()
+  
+  for x in range(0,len(value)):
+    newString = string.replace(value[x],key[x])
+    string = newString
+        
+  for y in range(0,len(key)):
+    userInput = requestString(key[y])
+    replace[key[y]] = userInput
+  
+  print replace
+  
+  for z in range(0,len(value)):
+    print key[z], value[z]
+    
