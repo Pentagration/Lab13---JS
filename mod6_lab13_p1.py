@@ -22,7 +22,7 @@ def madLib():
             "A day of the week":"Monday", 
             "Age in years":"27",
             "First Name":"Andrew",
-            "Last Names":"Maslia",
+            "Last Name":"Maslia",
             "An indoor hobby":"video games",
             "An emotion":"sad",
             "Your favorite possession":"PS4",
