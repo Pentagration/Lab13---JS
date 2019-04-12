@@ -3,7 +3,7 @@
 #Lab 13 - Madlib
 
 def madLib():
-  string = ('CRANSTON, RI Describing the utter lack of ambition as \"such a shame,\" '
+  string = ('CRANSTON, RI - Describing the utter lack of ambition as \"such a shame,\" '
   'sources confirmed Monday that local 27-year-old Andrew Maslia has been wasting his '
   'life playing video games when there\'s a whole world of other screens out there. ' 
   '\"It\'s really sad to see a guy like that spending eight hours a day holed up with ' 
@@ -17,25 +17,22 @@ def madLib():
   'go to a movie theater. He\'s really missing out.\" The source also confirmed that '
   'it has probably been years since Maslia last read a book on his Kindle.')
   
-  words = {"city":"CRANSTON,RI",
-            "verb":"such a shame", 
-            "dayOfWeek":"Monday", 
-            "age":"27",
-            "firstName":"Andrew",
-            "lastName":"Maslia",
-            "activity":"video games",
-            "pluralNoun1":"video games",
-            "emotion":"sad",
-            "noun1":"PS4",
-            "noun2":"iPad",
-            "noun3":"video games",
-            "noun4":"game controller",
-            "pluralNoun2":"remote controls",
-            "noun5":"laptop",
-            "location":"movie theater",
-            "subject":"his Kindle"}
+  words = {"A name of a city":"CRANSTON, RI",
+            "Cliche for a disappointment":"such a shame", 
+            "A day of the week":"Monday", 
+            "Age in years":"27",
+            "First Name":"Andrew",
+            "Last Names":"Maslia",
+            "An indoor hobby":"video games",
+            "An emotion":"sad",
+            "Your favorite possession":"PS4",
+            "A noun":"iPad",
+            "A thing":"game controller",
+            "Inanimate objects plural":"remote controls",
+            "Something that requires power":"laptop",
+            "A type of business":"movie theater",
+            "A subject you are not interested in":"his Kindle"}
   
-  print words
   value = words.values()
   key = words.keys()
   
@@ -62,4 +59,4 @@ def madLib():
     newString = string.replace(key[z],value[z])
     string = newString
   
-  print string
+  showInformation(string)
